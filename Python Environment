@@ -1,0 +1,54 @@
+Python Environment
+
+What is an Environment?
+
+A Python environment is an isolated workspace that contains its own dependencies, libraries, and settings, ensuring that projects run consistently without conflicts between different package versions.
+
+Why is an Environment Required?
+
+Python projects often require multiple libraries, which are frequently updated. To avoid version conflicts and ensure project stability, it is best practice to create a new environment for each project.
+
+Using Python 3.12
+
+For this setup, we will be using Python version 3.12.
+
+Creating a Python Environment
+
+Using Command Prompt
+
+Run the following command to create a new environment:
+
+conda create -p venv python==3.12
+
+Explanation:
+
+conda create → Creates a new Conda environment.
+
+-p venv → Specifies the path and name of the environment (here, venv).
+
+python==3.12 → Installs Python version 3.12 in the environment.
+
+Automatically Installed Libraries
+
+When you use conda create, certain basic libraries are installed by default, such as:
+
+pip
+
+python
+
+setuptools
+
+SQLite
+
+zlib, etc.
+
+Activating the Environment
+
+After creating the environment, you need to activate it:
+
+conda activate venv/
+
+Running Python Files
+
+Once activated, you can create and run any Python file within this environment without worrying about library conflicts.
+
